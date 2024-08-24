@@ -1,0 +1,18 @@
+.dashboard-container {
+    margin-left:10vw;
+    margin-right:10vw;
+    height:1000px;
+}
+
+h2 {
+    font-size:4rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size:2rem;
+}
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 2s;
+  }
