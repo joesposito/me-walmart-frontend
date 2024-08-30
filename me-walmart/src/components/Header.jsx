@@ -1,33 +1,33 @@
 import "../styles/Header.css"
 
 function Header(){
-    return(
+    return (
         <header>
-                <nav>
-                <a href="app.js">
+            <nav className="nav-bar">
+                <a href="/">
                     <div className="TitleLogo">
                         <span>Me@Walmart</span>
                         <img src="/Walmart_Spark.svg" alt="Walmart Logo"></img>
                     </div>
                 </a>
-                <ul>
+                <ul className="nav-bar-links">
                     <div className="login-link">
-                        <a href="#">
+                        <a href="#!">
                             <li>Profile</li>  
                         </a>
                     </div>
                     <div className="ask-sam-link">
-                        <a href="#">
+                        <a href="#!">
                             <li>Ask Sam</li>
                         </a>
                     </div>
                     <div className="my-team-link">
-                        <a href="#">
+                        <a href="#!">
                             <li>My Team</li>
                         </a>
                     </div>
                     <div className="home-link">
-                        <a href="#">
+                        <a href="#!">
                             <li>Home</li>  
                         </a>
                     </div>
@@ -37,4 +37,4 @@ function Header(){
     );
 }
 
-export default Header
+export default Header;

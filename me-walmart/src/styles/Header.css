@@ -1,16 +1,16 @@
 header {
     background-color: #007bd8;
     color: white;
-    font-weight:600;
-    font-size:2.0rem;
     padding-top:.5rem;
 }
 
-nav {
+.nav-bar {
     margin-left:5vw;
     margin-right:5vw;
     display:flex;
     justify-content: space-between;
+    font-weight:600;
+    font-size:2.0rem;
 }
 
 a {
@@ -19,7 +19,11 @@ a {
 }
 
 a:hover {
-    color: rgb(230, 230, 230);
+    color: rgb(211, 211, 211);
+}
+
+span {
+    transition: 0.3s;
 }
 
 .TitleLogo {
@@ -39,9 +43,10 @@ a:hover {
     margin-left: 7px;
 }
 
-li {
+.nav-bar-links li {
     list-style: none;
     text-align: center;
+    transition: 0.3s;
 }
 
 ul {
@@ -54,4 +59,6 @@ ul div {
     align-items: center;
     margin-left:25px;
 }
+
+
 

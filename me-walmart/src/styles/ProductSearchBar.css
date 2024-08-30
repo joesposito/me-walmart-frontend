@@ -1,4 +1,4 @@
-form{
+form {
     width:30%;
     height:5rem;
 }
@@ -55,6 +55,6 @@ input {
     background-color:white
 }
 
-.search-bar-input::placeholder{
+.search-bar-input::placeholder {
     color:#878787
 }

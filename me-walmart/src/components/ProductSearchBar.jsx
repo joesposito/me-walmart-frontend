@@ -1,23 +1,23 @@
 import "../styles/ProductSearchBar.css"
 import React, { useState } from 'react';
+import {useNavigate} from "react-router-dom";
 
-function ItemSearch(){
+function ProductSearchBar(){
     
-    const [upc, setUpc] = useState('');
-
-    function handleChange(e){
-        setUpc(e.target.value);
-    }
+    const [productId, setProductId] = useState('');
+    const navigate = useNavigate();
 
     async function getProduct(e) {
         e.preventDefault();
-        if(upc === ''){
+        const searchbar = document.getElementById("upc");
+        setProductId(searchbar.value);
+
+        if(productId === ''){
             return;
         }
 
-        const url = "http://localhost:8080/product/" + upc;
-        const response = await fetch(url);
-        console.log(response.json())
+        const path = "/product/" + productId;
+        return navigate(path);
     };
 
     return (
@@ -27,11 +27,11 @@ function ItemSearch(){
                     <div className="input-icon">
                         <input type="image" src="/Search_Icon.svg" alt="submit button" width="30px" height="30px"/>
                     </div>
-                    <input className="search-bar-input" type="text" id="upc" placeholder="Enter UPC to search for an item" onChange={handleChange}/>
+                    <input className="search-bar-input" type="text" id="upc" placeholder="Enter UPC to search for an item"/>
                 </div>
             </form>
         </div>
     );
 };
 
-export default ItemSearch;
+export default ProductSearchBar;

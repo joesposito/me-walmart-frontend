@@ -4,6 +4,7 @@ html {
 }
 
 @font-face { font-family: Bogle-Regular; src: url('/public/Bogle-Regular.otf'); } 
+@font-face { font-family: Bogle-Medium; src: url('/public/Bogle-Medium.otf'); } 
 
 body {
   margin: 0;
