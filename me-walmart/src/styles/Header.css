@@ -13,16 +13,16 @@ header {
     font-size:2.0rem;
 }
 
-a {
+header a {
     text-decoration: none;
     color: white;
 }
 
-a:hover {
+header a:hover {
     color: rgb(211, 211, 211);
 }
 
-span {
+header span {
     transition: 0.3s;
 }
 
@@ -49,11 +49,11 @@ span {
     transition: 0.3s;
 }
 
-ul {
+header ul {
     display: flex;
 }
 
-ul div {
+header ul div {
     display: flex;
     height: 100%;
     align-items: center;
