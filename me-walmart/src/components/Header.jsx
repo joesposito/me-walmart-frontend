@@ -13,6 +13,11 @@ function Header(){
                 <ul className="nav-bar-links">
                     <div className="login-link">
                         <a href="#!">
+                            <li>Admin</li>  
+                        </a>
+                    </div>
+                    <div className="login-link">
+                        <a href="#!">
                             <li>Profile</li>  
                         </a>
                     </div>
