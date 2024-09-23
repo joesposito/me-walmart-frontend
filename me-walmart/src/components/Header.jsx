@@ -1,6 +1,8 @@
 import "../styles/Header.css"
+import { Link } from "react-router-dom";
 
 function Header(){
+
     return (
         <header>
             <nav className="nav-bar">
@@ -12,11 +14,9 @@ function Header(){
                 </a>
                 <ul className="nav-bar-links">
                     <div className="login-link">
-                        <a href="#!">
-                            <li>Admin</li>  
-                        </a>
+                        <Link to="/login">Login</Link>
                     </div>
-                    <div className="login-link">
+                    <div className="profile-link">
                         <a href="#!">
                             <li>Profile</li>  
                         </a>

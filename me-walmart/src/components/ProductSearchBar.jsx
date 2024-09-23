@@ -8,7 +8,10 @@ function ProductSearchBar(){
     const navigate = useNavigate();
 
     async function getProduct(e) {
+        // Prevents default click behavior
         e.preventDefault();
+        
+        // Gets the upc from the URL
         const searchbar = document.getElementById("upc");
         setProductId(searchbar.value);
 
