@@ -25,7 +25,7 @@ function ProductSearchBar(){
 
     return (
         <div className="search-bar-container">
-            <form onSubmit={getProduct}>
+            <form className="search-bar-form" onSubmit={getProduct}>
                 <div className="search-bar">
                     <div className="input-icon">
                         <input type="image" src="/Search_Icon.svg" alt="submit button" width="30px" height="30px"/>
