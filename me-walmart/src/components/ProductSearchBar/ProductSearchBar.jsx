@@ -1,4 +1,4 @@
-import "../styles/ProductSearchBar.css";
+import "./ProductSearchBar.css";
 import React, { useState } from 'react';
 import {useNavigate} from "react-router-dom";
 
@@ -28,7 +28,7 @@ function ProductSearchBar(){
             <form className="search-bar-form" onSubmit={getProduct}>
                 <div className="search-bar">
                     <div className="input-icon">
-                        <input type="image" src="/Search_Icon.svg" alt="submit button" width="30px" height="30px"/>
+                        <input type="image" src="/images/Search_Icon.svg" alt="submit button" width="30px" height="30px"/>
                     </div>
                     <input className="search-bar-input" type="text" id="upc" placeholder="Enter UPC to search for an item"/>
                 </div>

@@ -1,7 +1,7 @@
-import ProductSearchBar from "../components/ProductSearchBar";
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import ProductInformation from "../components/ProductInformation";
+import ProductSearchBar from "../components/ProductSearchBar/ProductSearchBar";
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import ProductInformation from "../components/ProductInformation/ProductInformation";
 
 function ProductPage(){
     return (

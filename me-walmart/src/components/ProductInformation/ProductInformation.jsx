@@ -1,5 +1,5 @@
-import '../styles/ProductInformation.css';
-import NotFound from './NotFound';
+import './ProductInformation.css';
+import NotFound from '../NotFound/NotFound';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -49,7 +49,7 @@ function ProductInformation(){
 function ProductImage() {
     return (
         <div className="product-image-container">
-            <img className="product-image-main" src="/BLACK-DECKER-6-Slice-Crisp-N-Bake-Air-Fry-Toaster-Oven-TO3217SS.webp" 
+            <img className="product-image-main" src="/images/BLACK-DECKER-6-Slice-Crisp-N-Bake-Air-Fry-Toaster-Oven-TO3217SS.webp" 
                 alt="Temporary product image." ></img>
         </div>
     );

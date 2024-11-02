@@ -1,4 +1,4 @@
-import "../styles/Header.css"
+import "./Header.css"
 import { Link } from "react-router-dom";
 
 function Header(){
@@ -9,12 +9,14 @@ function Header(){
                 <a href="/">
                     <div className="TitleLogo">
                         <span>Me@Walmart</span>
-                        <img src="/Walmart_Spark.svg" alt="Walmart Logo"></img>
+                        <img src="/images/Walmart_Spark.svg" alt="Walmart Logo"></img>
                     </div>
                 </a>
                 <ul className="nav-bar-links">
-                    <div className="login-link">
-                        <Link to="/login">Login</Link>
+                    <div className="home-link">
+                        <a href="#!">
+                            <li>Home</li>  
+                        </a>
                     </div>
                     <div className="profile-link">
                         <a href="#!">
@@ -31,10 +33,8 @@ function Header(){
                             <li>My Team</li>
                         </a>
                     </div>
-                    <div className="home-link">
-                        <a href="#!">
-                            <li>Home</li>  
-                        </a>
+                    <div className="logout-link">
+                        <Link to="/login">Logout</Link>
                     </div>
                 </ul>
             </nav>

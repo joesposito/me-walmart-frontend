@@ -3,8 +3,8 @@ html {
   font-size: 62.5%;
 }
 
-@font-face { font-family: Bogle-Regular; src: url('/public/Bogle-Regular.otf'); } 
-@font-face { font-family: Bogle-Medium; src: url('/public/Bogle-Medium.otf'); } 
+@font-face { font-family: Bogle-Regular; src: url('/public/fonts/Bogle-Regular.otf'); } 
+@font-face { font-family: Bogle-Medium; src: url('/public/fonts/Bogle-Medium.otf'); } 
 
 body {
   margin: 0;
